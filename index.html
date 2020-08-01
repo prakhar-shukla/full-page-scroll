@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Page Scroll</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .app {
+            height: 100vh;
+        }
+
+        #page1 {
+            background: #ba68c8;
+        }
+
+        #page2 {
+            background-color: #ef5350;
+        }
+
+        #page3 {
+            background-color: #ffa726;
+        }
+
+        #page4 {
+            background-color: #81c784;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="app">
+        <section id="page1" class="active">
+            <h2>Section 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sequi quaerat officia non sunt sit,
+                assumenda ullam itaque eos natus sed, aliquam adipisci consectetur nemo eum a reprehenderit fuga, ut
+                consequatur beatae tenetur debitis. Officiis, quod vitae sapiente tempore odit, quas nemo minus
+                cupiditate laboriosam et cum accusantium porro quam hic soluta? Blanditiis assumenda suscipit accusamus
+                laborum modi, cumque consequatur velit asperiores eius consectetur deserunt fugiat aperiam recusandae
+                quibusdam, dolore alias doloribus ut quis, voluptatem dolorum dolores harum unde magni. Commodi ducimus
+                distinctio, quos ipsa, itaque illo nostrum laboriosam corporis sunt ad perferendis laborum ut natus
+                magni dolore unde asperiores!</p>
+        </section>
+
+        <section id="page2">
+            <h2>Section 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, consequuntur enim ab dolorem rem,
+                animi voluptates ipsam sequi nisi, dolores quod. Unde molestias facere autem nam error laboriosam eum
+                nisi! Placeat voluptatum voluptate aspernatur. Laboriosam nulla eaque culpa corporis consequuntur
+                suscipit temporibus sed, totam, quia sit aut beatae sunt nihil ducimus fugit dolorum inventore minus
+                dolorem modi eius! Aliquid distinctio sed dolorem? Quos ipsum optio fugit asperiores eligendi vitae
+                saepe nostrum. Eius minus recusandae quaerat. Fuga inventore temporibus doloremque sequi officia
+                voluptatibus explicabo ad? Distinctio molestiae cupiditate obcaecati eum consequatur, error, illo
+                quidem, maxime expedita veniam assumenda alias culpa laudantium!</p>
+        </section>
+        <section id="page3">
+            <h2>Section 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, consequuntur enim ab dolorem rem,
+                animi voluptates ipsam sequi nisi, dolores quod. Unde molestias facere autem nam error laboriosam eum
+                nisi! Placeat voluptatum voluptate aspernatur. Laboriosam nulla eaque culpa corporis consequuntur
+                suscipit temporibus sed, totam, quia sit aut beatae sunt nihil ducimus fugit dolorum inventore minus
+                dolorem modi eius! Aliquid distinctio sed dolorem? Quos ipsum optio fugit asperiores eligendi vitae
+                saepe nostrum. Eius minus recusandae quaerat. Fuga inventore temporibus doloremque sequi officia
+                voluptatibus explicabo ad? Distinctio molestiae cupiditate obcaecati eum consequatur, error, illo
+                quidem, maxime expedita veniam assumenda alias culpa laudantium!</p>
+        </section>
+        <section id="page4">
+            <h2>Section 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, consequuntur enim ab dolorem rem,
+                animi voluptates ipsam sequi nisi, dolores quod. Unde molestias facere autem nam error laboriosam eum
+                nisi! Placeat voluptatum voluptate aspernatur. Laboriosam nulla eaque culpa corporis consequuntur
+                suscipit temporibus sed, totam, quia sit aut beatae sunt nihil ducimus fugit dolorum inventore minus
+                dolorem modi eius! Aliquid distinctio sed dolorem? Quos ipsum optio fugit asperiores eligendi vitae
+                saepe nostrum. Eius minus recusandae quaerat. Fuga inventore temporibus doloremque sequi officia
+                voluptatibus explicabo ad? Distinctio molestiae cupiditate obcaecati eum consequatur, error, illo
+                quidem, maxime expedita veniam assumenda alias culpa laudantium!</p>
+        </section>
+    </div>
+
+    <script src="./dist/js/fullPageScroll.js"></script>
+    <script>
+        fullPageScroll.init()
+    </script>
+</body>
+
+</html>
